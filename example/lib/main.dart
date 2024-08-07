@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_slider.dart' as car;
 import 'package:flutter/material.dart';
 
 final List<String> imgList = [
@@ -255,7 +256,7 @@ class ManuallyControlledSlider extends StatefulWidget {
 }
 
 class _ManuallyControlledSliderState extends State<ManuallyControlledSlider> {
-  final CarouselController _controller = CarouselController();
+  final car.CarouselController _controller = car.CarouselController();
 
   @override
   void initState() {
@@ -408,7 +409,7 @@ class CarouselWithIndicatorDemo extends StatefulWidget {
 
 class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final car.CarouselController _controller = car.CarouselController();
 
   @override
   Widget build(BuildContext context) {
@@ -515,7 +516,7 @@ class CarouselChangeReasonDemo extends StatefulWidget {
 
 class _CarouselChangeReasonDemoState extends State<CarouselChangeReasonDemo> {
   String reason = '';
-  final CarouselController _controller = CarouselController();
+  final car.CarouselController _controller = car.CarouselController();
 
   void onPageChange(int index, CarouselPageChangedReason changeReason) {
     setState(() {
